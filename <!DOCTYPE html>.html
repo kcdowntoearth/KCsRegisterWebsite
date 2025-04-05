@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+        label, input, select, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>註冊新帳號</h2>
+    <form>
+        <label for="username">使用者名稱</label>
+        <input type="text" id="username" required>
+        
+        <label for="email">電子郵件</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">密碼</label>
+        <input type="password" id="password" required>
+        
+        <label for="confirm-password">確認密碼</label>
+        <input type="password" id="confirm-password" required>
+        
+        <label for="birthday">生日</label>
+        <input type="date" id="birthday" required>
+        
+        <label>性別</label>
+        <input type="radio" name="gender" value="male"> 男
+        <input type="radio" name="gender" value="female"> 女
+        <input type="radio" name="gender" value="other"> 其他
+        
+        <label for="job">工作領域</label>
+        <select id="job">
+            <option value="art">藝術人文</option>
+            <option value="it">資訊工程</option>
+            <option value="education">教育</option>
+            <option value="freelance">自由工作者</option>
+        </select>
+        
+        <label for="intro">自我介紹</label>
+        <textarea id="intro" rows="4"></textarea>
+        
+        <button type="submit">確認註冊</button>
+    </form>
+</body>
+</html>
